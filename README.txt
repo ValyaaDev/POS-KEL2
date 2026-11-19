@@ -1,31 +1,48 @@
-APLIKASI POSKU - PHP NATIVE + MYSQL
+# 🛒 POSKU — Point of Sale System
 
-FITUR
-- Login Admin dan Kasir berbasis session.
-- Dashboard ringkasan omzet, transaksi, jumlah produk, dan stok menipis.
-- CRUD kategori, produk, dan pelanggan (khusus admin).
-- Kasir: keranjang, hitung total, metode pembayaran, uang bayar, kembalian.
-- Checkout menyimpan transaksi dan detail transaksi serta mengurangi stok.
-- Laporan berdasarkan rentang tanggal dan cetak struk.
-- Prepared statement, password hashing, CSRF token, dan database transaction.
+<p align="center">
+  <b>Aplikasi Point of Sale (POS) berbasis PHP Native dan MySQL</b>
+  <br>
+  Sistem kasir sederhana untuk membantu pengelolaan produk, transaksi penjualan, stok barang, dan laporan penjualan.
+</p>
 
-CARA MENJALANKAN DI XAMPP
-1. Ekstrak folder POS_Native_PHP ke C:\\xampp\\htdocs\\
-2. Buka XAMPP Control Panel, jalankan Apache dan MySQL.
-3. Buka http://localhost/phpmyadmin
-4. Pilih menu Import, pilih file database.sql dari folder POS_Native_PHP, lalu klik Import.
-   File SQL akan membuat database bernama pos_native.
-5. Pastikan pengaturan database di config.php sesuai:
-   host=localhost, dbname=pos_native, dbuser=root, dbpass=''
-6. Buka http://localhost/POS_Native_PHP/
+<p align="center">
+  <img src="https://img.shields.io/badge/PHP-Native-777BB4?style=for-the-badge&logo=php&logoColor=white">
+  <img src="https://img.shields.io/badge/MySQL-Database-4479A1?style=for-the-badge&logo=mysql&logoColor=white">
+  <img src="https://img.shields.io/badge/HTML5-Frontend-E34F26?style=for-the-badge&logo=html5&logoColor=white">
+  <img src="https://img.shields.io/badge/CSS3-Styling-1572B6?style=for-the-badge&logo=css3&logoColor=white">
+</p>
 
-AKUN AWAL
-Admin : admin / admin123
-Kasir : kasir / kasir123
+---
 
-Catatan:
-- Akun awal dibuat otomatis ketika tabel users masih kosong.
-- Ganti password akun awal sebelum aplikasi dipakai sungguhan.
-- Contoh ini ditujukan untuk pembelajaran/lokal, belum untuk deployment publik.
-- Untuk keamanan produksi, tambahkan pengelolaan user, pembatasan akses yang lebih rinci,
-  backup database, validasi tambahan, dan konfigurasi HTTPS.
+## 📌 Tentang Project
+
+**POSKU** merupakan aplikasi Point of Sale (POS) atau sistem kasir berbasis web yang dibangun menggunakan PHP Native dan MySQL.
+
+Aplikasi ini dirancang untuk mempermudah pengelolaan toko melalui sistem yang terintegrasi, mulai dari pengelolaan data produk, proses transaksi penjualan, hingga pembuatan laporan.
+
+Project ini dikembangkan sebagai media pembelajaran pemrograman web, khususnya dalam penerapan PHP, database MySQL, autentikasi pengguna, serta pengelolaan transaksi menggunakan sistem CRUD.
+
+---
+
+## ✨ Fitur Utama
+
+### 🔐 Authentication
+- Login Admin dan Kasir.
+- Autentikasi menggunakan session.
+- Password disimpan menggunakan hashing.
+- CSRF token untuk perlindungan form.
+
+### 📊 Dashboard
+- Ringkasan omzet penjualan.
+- Total transaksi.
+- Jumlah produk.
+- Informasi stok produk menipis.
+
+### 📦 Manajemen Data
+- CRUD kategori produk.
+- CRUD produk.
+- CRUD pelanggan.
+- Pengelolaan data khusus Admin.
+
+### 🛍️
