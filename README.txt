@@ -1,48 +1,44 @@
-# 🛒 POSKU — Point of Sale System
+# 🛒 POSKU - Aplikasi Kasir
 
-<p align="center">
-  <b>Aplikasi Point of Sale (POS) berbasis PHP Native dan MySQL</b>
-  <br>
-  Sistem kasir sederhana untuk membantu pengelolaan produk, transaksi penjualan, stok barang, dan laporan penjualan.
-</p>
+Aplikasi Point of Sale (POS) berbasis web menggunakan **PHP Native** dan **MySQL** untuk mengelola produk, transaksi penjualan, stok barang, dan laporan.
 
-<p align="center">
-  <img src="https://img.shields.io/badge/PHP-Native-777BB4?style=for-the-badge&logo=php&logoColor=white">
-  <img src="https://img.shields.io/badge/MySQL-Database-4479A1?style=for-the-badge&logo=mysql&logoColor=white">
-  <img src="https://img.shields.io/badge/HTML5-Frontend-E34F26?style=for-the-badge&logo=html5&logoColor=white">
-  <img src="https://img.shields.io/badge/CSS3-Styling-1572B6?style=for-the-badge&logo=css3&logoColor=white">
-</p>
+## ✨ Fitur
+- Login Admin dan Kasir
+- Dashboard ringkasan penjualan
+- CRUD kategori, produk, dan pelanggan
+- Keranjang belanja dan checkout
+- Perhitungan pembayaran dan kembalian
+- Pengelolaan stok otomatis
+- Laporan penjualan berdasarkan tanggal
+- Cetak struk transaksi
+
+## 🛠️ Teknologi
+- PHP Native
+- MySQL
+- HTML, CSS, JavaScript
+- XAMPP
+
+## 🔑 Akun Demo
+
+| Role | Username | Password |
+|---|---|---|
+| Admin | `admin` | `admin123` |
+| Kasir | `kasir` | `kasir123` |
+
+## 🚀 Instalasi
+1. Clone repository.
+2. Pindahkan folder project ke `htdocs`.
+3. Jalankan Apache dan MySQL melalui XAMPP.
+4. Import database melalui phpMyAdmin.
+5. Buka aplikasi melalui browser:
+
+   `http://localhost/posku`
+
+## 🔒 Keamanan
+Menggunakan prepared statement, password hashing, CSRF token, session authentication, dan database transaction.
+
+> Project ini dibuat untuk pembelajaran dan penggunaan lokal. Belum disarankan untuk deployment publik.
 
 ---
 
-## 📌 Tentang Project
-
-**POSKU** merupakan aplikasi Point of Sale (POS) atau sistem kasir berbasis web yang dibangun menggunakan PHP Native dan MySQL.
-
-Aplikasi ini dirancang untuk mempermudah pengelolaan toko melalui sistem yang terintegrasi, mulai dari pengelolaan data produk, proses transaksi penjualan, hingga pembuatan laporan.
-
-Project ini dikembangkan sebagai media pembelajaran pemrograman web, khususnya dalam penerapan PHP, database MySQL, autentikasi pengguna, serta pengelolaan transaksi menggunakan sistem CRUD.
-
----
-
-## ✨ Fitur Utama
-
-### 🔐 Authentication
-- Login Admin dan Kasir.
-- Autentikasi menggunakan session.
-- Password disimpan menggunakan hashing.
-- CSRF token untuk perlindungan form.
-
-### 📊 Dashboard
-- Ringkasan omzet penjualan.
-- Total transaksi.
-- Jumlah produk.
-- Informasi stok produk menipis.
-
-### 📦 Manajemen Data
-- CRUD kategori produk.
-- CRUD produk.
-- CRUD pelanggan.
-- Pengelolaan data khusus Admin.
-
-### 🛍️
+**Developed by Reza Budi Saputra** 💻
