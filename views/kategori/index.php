@@ -1,0 +1,7 @@
+    <div class="two-col"><div class="panel"><div class="panel-head"><div><h3><?= $edit?'Edit':'Tambah' ?> Kategori</h3><p>Kelola kelompok produk</p></div></div>
+    <form method="post" class="form-stack"><?=csrf_field()?><input type="hidden" name="action" value="save_category"><input type="hidden" name="id" value="<?=e($edit['id']??'')?>">
+    <label>Nama Kategori</label><input name="nama_kategori" required value="<?=e($edit['nama_kategori']??'')?>" placeholder="Contoh: Makanan">
+    <button class="btn primary"><?= $edit?'Simpan Perubahan':'Tambah Kategori' ?></button><?php if($edit): ?><a class="btn light" href="index.php?page=categories">Batal</a><?php endif; ?></form></div>
+    <div class="panel"><div class="panel-head"><div><h3>Daftar Kategori</h3><p><?=count($rows)?> kategori</p></div></div><div class="table-wrap"><table><thead><tr><th>Nama Kategori</th><th>Jumlah Produk</th><th>Aksi</th></tr></thead><tbody>
+    <?php foreach($rows as $r): ?><tr><td><?=e($r['nama_kategori'])?></td><td><?=e($r['jumlah_produk'])?></td><td class="actions"><a class="text-link" href="index.php?page=categories&edit=<?=$r['id']?>">Edit</a><form method="post" onsubmit="return confirm('Hapus kategori ini?')"><?=csrf_field()?><input type="hidden" name="action" value="delete_category"><input type="hidden" name="id" value="<?=$r['id']?>"><button class="link-danger">Hapus</button></form></td></tr><?php endforeach; ?>
+    </tbody></table></div></div></div>
