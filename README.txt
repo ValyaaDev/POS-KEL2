@@ -1,44 +1,21 @@
-# 🛒 POSKU - Aplikasi Kasir
+FITUR
+- Login Admin dan Kasir berbasis session.
+- Dashboard ringkasan omzet, transaksi, jumlah produk, dan stok menipis.
+- CRUD kategori, produk, dan pelanggan (khusus admin).
+- Kasir: keranjang, hitung total, metode pembayaran, uang bayar, kembalian.
+- Checkout menyimpan transaksi dan detail transaksi serta mengurangi stok.
+- Laporan berdasarkan rentang tanggal dan cetak struk.
+- Prepared statement, password hashing, CSRF token, dan database transaction.
 
-Aplikasi Point of Sale (POS) berbasis web menggunakan **PHP Native** dan **MySQL** untuk mengelola produk, transaksi penjualan, stok barang, dan laporan.
+AKUN AWAL
+Admin : admin / admin123
+Kasir : kasir / kasir123
 
-## ✨ Fitur
-- Login Admin dan Kasir
-- Dashboard ringkasan penjualan
-- CRUD kategori, produk, dan pelanggan
-- Keranjang belanja dan checkout
-- Perhitungan pembayaran dan kembalian
-- Pengelolaan stok otomatis
-- Laporan penjualan berdasarkan tanggal
-- Cetak struk transaksi
+Catatan:
+- Akun awal dibuat otomatis ketika tabel users masih kosong.
+- Ganti password akun awal sebelum aplikasi dipakai sungguhan.
+- Contoh ini ditujukan untuk pembelajaran/lokal, belum untuk deployment publik.
+- Untuk keamanan produksi, tambahkan pengelolaan user, pembatasan akses yang lebih rinci,
+  backup database, validasi tambahan, dan konfigurasi HTTPS.
 
-## 🛠️ Teknologi
-- PHP Native
-- MySQL
-- HTML, CSS, JavaScript
-- XAMPP
-
-## 🔑 Akun Demo
-
-| Role | Username | Password |
-|---|---|---|
-| Admin | `admin` | `admin123` |
-| Kasir | `kasir` | `kasir123` |
-
-## 🚀 Instalasi
-1. Clone repository.
-2. Pindahkan folder project ke `htdocs`.
-3. Jalankan Apache dan MySQL melalui XAMPP.
-4. Import database melalui phpMyAdmin.
-5. Buka aplikasi melalui browser:
-
-   `http://localhost/posku`
-
-## 🔒 Keamanan
-Menggunakan prepared statement, password hashing, CSRF token, session authentication, dan database transaction.
-
-> Project ini dibuat untuk pembelajaran dan penggunaan lokal. Belum disarankan untuk deployment publik.
-
----
-
-**Developed by Reza Budi Saputra** 💻
+CC : ValyaDev
